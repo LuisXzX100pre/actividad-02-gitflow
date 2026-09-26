@@ -1,0 +1,75 @@
+:root {
+  --dark: #0d1117;
+  --panel: #161b22;
+  --accent: #7c3aed;
+  --accent2: #06b6d4;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: radial-gradient(circle at top, #1e293b 0%, var(--dark) 45%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.navbar {
+  background: rgba(13, 17, 23, .94) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.navbar-brand { font-weight: 800; letter-spacing: .5px; }
+.nav-link { color: #dbeafe !important; }
+.nav-link:hover { color: #a78bfa !important; }
+
+.hero {
+  padding: 7rem 0 4rem;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+}
+
+.badge-game {
+  background: rgba(124, 58, 237, .15);
+  color: #c4b5fd;
+  border: 1px solid rgba(167, 139, 250, .35);
+}
+
+.btn-game {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  border: none;
+  color: white;
+}
+.btn-game:hover { opacity: .9; color: white; }
+
+.section-title { font-weight: 800; }
+.gallery-card {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.08);
+  overflow: hidden;
+  height: 100%;
+}
+.gallery-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
+.gallery-card .card-body { color: var(--text); }
+.gallery-card .card-text { color: var(--muted); }
+
+footer {
+  background: #080b10;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.scene {
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  border-radius: .75rem;
+}
+
+.small-muted { color: var(--muted); }
