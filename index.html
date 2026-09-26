@@ -8,13 +8,31 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <main class="hero">
+  <!-- FEATURE: HEADER -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">ASTRA LEGENDS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="inicio" class="hero">
     <div class="container text-center">
-      <span class="badge rounded-pill badge-game px-3 py-2 mb-3">PROYECTO GIT FLOW</span>
+      <span class="badge rounded-pill badge-game px-3 py-2 mb-3">AVENTURA • EXPLORACIÓN • FANTASÍA</span>
       <h1 class="display-3 fw-bold">Astra Legends</h1>
       <p class="lead small-muted mx-auto" style="max-width: 700px;">
-        Página base para integrar header, galería y footer mediante ramas feature.
+        Explora ruinas antiguas, descubre secretos y domina habilidades mágicas en un mundo lleno de desafíos.
       </p>
+      <a class="btn btn-game btn-lg px-4 mt-2" href="#galeria">Ver galería</a>
     </div>
   </main>
 
